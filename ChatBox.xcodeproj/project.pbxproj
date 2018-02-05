@@ -8,20 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		80F20586202601AC0090B502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F20585202601AC0090B502 /* AppDelegate.swift */; };
-		80F20588202601AD0090B502 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F20587202601AD0090B502 /* ViewController.swift */; };
 		80F2058B202601AD0090B502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F20589202601AD0090B502 /* Main.storyboard */; };
 		80F2058D202601AD0090B502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F2058C202601AD0090B502 /* Assets.xcassets */; };
 		80F20590202601AD0090B502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F2058E202601AD0090B502 /* LaunchScreen.storyboard */; };
+		80F2059D202747180090B502 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80F2059C202747180090B502 /* GoogleService-Info.plist */; };
+		80F2059F20274C230090B502 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F2059E20274C230090B502 /* LoginViewController.swift */; };
+		80F205A2202751E60090B502 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F205A1202751E60090B502 /* ChatViewController.swift */; };
+		80F205A5202758050090B502 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F205A4202758050090B502 /* User.swift */; };
+		80F205A8202763AF0090B502 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F205A7202763AF0090B502 /* ViewController.swift */; };
+		80F205AB202849DA0090B502 /* ButtonRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F205AA202849DA0090B502 /* ButtonRadius.swift */; };
+		80F205AD20284B620090B502 /* BorderedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F205AC20284B620090B502 /* BorderedTextField.swift */; };
+		80F205AF20284D480090B502 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F205AE20284D480090B502 /* UIColor.swift */; };
+		818CDC628A8EF7BBE78B42A2 /* Pods_ChatBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED18CF6B86E3BF4DA506BBDE /* Pods_ChatBox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14E255AA04FEC66478BB8CAF /* Pods-ChatBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatBox/Pods-ChatBox.release.xcconfig"; sourceTree = "<group>"; };
 		80F20582202601AC0090B502 /* ChatBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F20585202601AC0090B502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		80F20587202601AD0090B502 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80F2058A202601AD0090B502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80F2058C202601AD0090B502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80F2058F202601AD0090B502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80F20591202601AD0090B502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80F2059C202747180090B502 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		80F2059E20274C230090B502 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		80F205A1202751E60090B502 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		80F205A4202758050090B502 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		80F205A7202763AF0090B502 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80F205AA202849DA0090B502 /* ButtonRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonRadius.swift; sourceTree = "<group>"; };
+		80F205AC20284B620090B502 /* BorderedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedTextField.swift; sourceTree = "<group>"; };
+		80F205AE20284D480090B502 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		CFAF9133B82BF67923D8B737 /* Pods-ChatBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatBox/Pods-ChatBox.debug.xcconfig"; sourceTree = "<group>"; };
+		ED18CF6B86E3BF4DA506BBDE /* Pods_ChatBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				818CDC628A8EF7BBE78B42A2 /* Pods_ChatBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +59,8 @@
 			children = (
 				80F20584202601AC0090B502 /* ChatBox */,
 				80F20583202601AC0090B502 /* Products */,
+				F5CA3FDF96647BAAC251A340 /* Pods */,
+				C8928696E278F7419556DC51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +75,102 @@
 		80F20584202601AC0090B502 /* ChatBox */ = {
 			isa = PBXGroup;
 			children = (
-				80F20585202601AC0090B502 /* AppDelegate.swift */,
-				80F20587202601AD0090B502 /* ViewController.swift */,
-				80F20589202601AD0090B502 /* Main.storyboard */,
-				80F2058C202601AD0090B502 /* Assets.xcassets */,
-				80F2058E202601AD0090B502 /* LaunchScreen.storyboard */,
-				80F20591202601AD0090B502 /* Info.plist */,
+				80F205A9202849BD0090B502 /* CustomViews */,
+				80F205A6202763A30090B502 /* Extensions */,
+				80F20597202601CF0090B502 /* AppDelegate */,
+				80F205A3202757F70090B502 /* Models */,
+				80F20598202601DE0090B502 /* Controllers */,
+				80F20599202601F90090B502 /* Storyboards */,
+				80F2059A202602160090B502 /* Resources */,
 			);
 			path = ChatBox;
+			sourceTree = "<group>";
+		};
+		80F20597202601CF0090B502 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				80F20585202601AC0090B502 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		80F20598202601DE0090B502 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				80F205A020274CE50090B502 /* Auth */,
+				80F205A1202751E60090B502 /* ChatViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		80F20599202601F90090B502 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				80F20589202601AD0090B502 /* Main.storyboard */,
+				80F2058E202601AD0090B502 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		80F2059A202602160090B502 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80F20591202601AD0090B502 /* Info.plist */,
+				80F2059C202747180090B502 /* GoogleService-Info.plist */,
+				80F2058C202601AD0090B502 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80F205A020274CE50090B502 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				80F2059E20274C230090B502 /* LoginViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		80F205A3202757F70090B502 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80F205A4202758050090B502 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		80F205A6202763A30090B502 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80F205A7202763AF0090B502 /* ViewController.swift */,
+				80F205AE20284D480090B502 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		80F205A9202849BD0090B502 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				80F205AA202849DA0090B502 /* ButtonRadius.swift */,
+				80F205AC20284B620090B502 /* BorderedTextField.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		C8928696E278F7419556DC51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED18CF6B86E3BF4DA506BBDE /* Pods_ChatBox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5CA3FDF96647BAAC251A340 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFAF9133B82BF67923D8B737 /* Pods-ChatBox.debug.xcconfig */,
+				14E255AA04FEC66478BB8CAF /* Pods-ChatBox.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +180,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80F20594202601AD0090B502 /* Build configuration list for PBXNativeTarget "ChatBox" */;
 			buildPhases = (
+				C9E74F721AB27B51F8687610 /* [CP] Check Pods Manifest.lock */,
 				80F2057E202601AC0090B502 /* Sources */,
 				80F2057F202601AC0090B502 /* Frameworks */,
 				80F20580202601AC0090B502 /* Resources */,
+				2F195E228D9276D3DAE9A2DF /* [CP] Embed Pods Frameworks */,
+				F9E86BE9BC5EF742956AC9F3 /* [CP] Copy Pods Resources */,
+				80F2059B202740C00090B502 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -124,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80F20590202601AD0090B502 /* LaunchScreen.storyboard in Resources */,
+				80F2059D202747180090B502 /* GoogleService-Info.plist in Resources */,
 				80F2058D202601AD0090B502 /* Assets.xcassets in Resources */,
 				80F2058B202601AD0090B502 /* Main.storyboard in Resources */,
 			);
@@ -131,12 +245,95 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F195E228D9276D3DAE9A2DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChatBox/Pods-ChatBox-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatBox/Pods-ChatBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80F2059B202740C00090B502 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		C9E74F721AB27B51F8687610 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9E86BE9BC5EF742956AC9F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatBox/Pods-ChatBox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		80F2057E202601AC0090B502 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80F20588202601AD0090B502 /* ViewController.swift in Sources */,
+				80F205A8202763AF0090B502 /* ViewController.swift in Sources */,
+				80F205AB202849DA0090B502 /* ButtonRadius.swift in Sources */,
+				80F205A5202758050090B502 /* User.swift in Sources */,
+				80F2059F20274C230090B502 /* LoginViewController.swift in Sources */,
+				80F205A2202751E60090B502 /* ChatViewController.swift in Sources */,
+				80F205AF20284D480090B502 /* UIColor.swift in Sources */,
+				80F205AD20284B620090B502 /* BorderedTextField.swift in Sources */,
 				80F20586202601AC0090B502 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,7 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +459,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -272,31 +469,35 @@
 		};
 		80F20595202601AD0090B502 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFAF9133B82BF67923D8B737 /* Pods-ChatBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GYL934XVH2;
-				INFOPLIST_FILE = ChatBox/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ChatBox/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.einmuya.ChatBox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.einmuya.chatbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		80F20596202601AD0090B502 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14E255AA04FEC66478BB8CAF /* Pods-ChatBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GYL934XVH2;
-				INFOPLIST_FILE = ChatBox/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ChatBox/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.einmuya.ChatBox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.einmuya.chatbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

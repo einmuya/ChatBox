@@ -1,0 +1,44 @@
+excluded:
+  - ./Pods
+  - ./R.generated.swift
+
+disabled_rules:
+  - line_length
+  - variable_name
+  - type_body_length
+  - function_body_length
+  - force_cast
+  - file_length
+  - todo
+  - function_parameter_count
+  - valid_docs
+  - type_name
+  - trailing_whitespace
+  - legacy_constructor
+  - return_arrow_whitespace
+  - weak_delegate
+  - redundant_string_enum_value
+  - unused_closure_parameter
+
+#opt_in_rules:
+#  - missing_docs
+
+#missing_docs:
+#  - internal
+
+#rule parameters
+line_length:
+  - 160
+type_body_length:
+  - 1000
+file_length:
+  - 1010
+function_body_length:
+  - 500
+function_parameter_count:
+  - 10
+
+#warning levels
+force_cast: warning
+cyclomatic_complexity: warning
+weak_delegate: error

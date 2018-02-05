@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>87415762810-ra4pbpjbov5qfj08np33i95kc5os0v3b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.87415762810-ra4pbpjbov5qfj08np33i95kc5os0v3b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBCK9ksI4aDExfyERa19_cgYAaqFI4ZWxs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>87415762810</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.einmuya.chatbox</string>
+	<key>PROJECT_ID</key>
+	<string>chatbot-6440b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chatbot-6440b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:87415762810:ios:c1d1db3d179837f1</string>
+	<key>DATABASE_URL</key>
+	<string>https://chatbot-6440b.firebaseio.com</string>
+</dict>
+</plist>
