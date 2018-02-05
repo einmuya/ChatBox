@@ -112,12 +112,14 @@ class ChatViewController: JSQMessagesViewController {
         
         // Create child ref for message
         let itemRef = messageRef.childByAutoId()
+        let key = messageRef.childByAutoId().key
         
         // Dictionary for holding message
         let messageItem = [
             "senderId": senderId!,
             "senderName": senderDisplayName!,
-            "text": text!
+            "text": text!,
+            "key": key
             ]
         
         // Save child ref for message
@@ -186,13 +188,17 @@ extension ChatViewController {
         
         // Dictionary for holding message
         let message = messages[indexPath.item]
+        let query = messageRef.queryOrdered(byChild: "senderId").queryEqual(toValue: message.senderId)
         
         let alert = UIAlertController(title: "", message: "Select Action", preferredStyle: .actionSheet)
     
         // Delete action
         alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (UIAlertAction) in
-            
-            print(indexPath[1], message)
+                query.observe(DataEventType.value, with: { (snapshot) in
+                let chat = snapshot.value as? [String: AnyObject] ?? [:]
+                print(chat)
+            })
+            //print(indexPath[1], message)
         }))
         
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: { (UIAlertAction) in
