@@ -94,6 +94,23 @@ class ChatViewController: JSQMessagesViewController {
         })
     }
     
+    private func observeDelete() {
+        let messageQuery = messageRef.queryLimited(toLast: 25)
+        
+        newMessageRefHandle = messageQuery.observe(.childRemoved, with: {(snapshot) -> Void in
+            
+            let messageData = snapshot.value as! [String: String]
+            if let id = messageData["senderId"] as String!, let name = messageData["senderName"] as String!, let text = messageData["text"] as String!, text.count > 0 {
+                
+                self.addMessage(withId: id, name: name, text: text)
+                
+                self.finishReceivingMessage()
+            } else {
+                print("Error! Could not decode message data")
+            }
+        })
+    }
+    
     // Typing Indicator Action
     private func observeTyping() {
         usersTypingQuery.observe(.value) { (data: DataSnapshot) in
@@ -188,23 +205,35 @@ extension ChatViewController {
         
         // Dictionary for holding message
         let message = messages[indexPath.item]
-        let query = messageRef.queryOrdered(byChild: "senderId").queryEqual(toValue: message.senderId)
+        let query = messageRef.queryOrdered(byChild: "text").queryEqual(toValue: message.text)
         
         let alert = UIAlertController(title: "", message: "Select Action", preferredStyle: .actionSheet)
     
-        // Delete action
-        alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (UIAlertAction) in
+        if recognizer.state == UIGestureRecognizerState.began {
+            // Delete action
+            alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (UIAlertAction) in
                 query.observe(DataEventType.value, with: { (snapshot) in
-                let chat = snapshot.value as? [String: AnyObject] ?? [:]
-                print(chat)
-            })
-            //print(indexPath[1], message)
-        }))
-        
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: { (UIAlertAction) in
-        }))
-        
-        self.present(alert, animated: true, completion: {})
-        finishSendingMessage()
+                    let chat = snapshot.value as? [String: AnyObject] ?? [:]
+                    for data in chat {
+                        print(data.key)
+                        self.messageRef.child("\(data.key)").removeValue()
+                        self.messages.remove(at: indexPath.item)
+                        self.collectionView.reloadData()
+                    }
+                })
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+                //print(indexPath[1], query, message)
+            }))
+            
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: { (UIAlertAction) in
+            }))
+            
+            self.present(alert, animated: true, completion: {})
+            
+        } else if recognizer.state == UIGestureRecognizerState.ended {
+            
+        }
     }
 }
