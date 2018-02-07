@@ -215,8 +215,10 @@ extension ChatViewController {
                 query.observe(DataEventType.value, with: { (snapshot) in
                     let chat = snapshot.value as? [String: AnyObject] ?? [:]
                     for data in chat {
-                        print(data.key)
+                        // Detele message from firebase database
                         self.messageRef.child("\(data.key)").removeValue()
+                        
+                        // remove message from collectionview and reload data
                         self.messages.remove(at: indexPath.item)
                         self.collectionView.reloadData()
                     }
